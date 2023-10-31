@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MyCoffeWebApp</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="texttitle">
+            <a href="">
+                <img src="img/hittacoffelogo.jpg" style="width: 50px; border-radius: 50%;"  alt="">
+                <span>HITA COFFEE</span>
+            </a>
+        </div>
+        <!--  -->
+        <div class="logo" >
+            <i class="fa-solid fa-bars menu" id="openmenus"></i>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-xmark menu close"></i>
+            </div>
+            <ul class="active">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <button>Reservation</button>
+                </li>
+            </ul>
+        </div>
+        <!--  -->
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <button>Reservation</button>
+            </li>
+        </ul>
+    </div>
+    <div class="tutupfungsi"></div>
+
+    <div class="bgmask" id="homes">
+        <div class="leftbtn"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="rightbtn"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="carousel" data-aos="fade-up"
+                                data-aos-duration="3000">
+            <span id="1" class="one">Kualitas Terbaik</span>
+            <h1 id="2" class="two">BETTER</h1>
+            <p id="3">Every presentation that is made, always uses the best ingredients so that the quality is guaranteed, swipe down to see more and to see the map of hita coffe</p>
+            <button>EXPLORE MENU</button>
+        </div>
+        <div class="carousel" data-aos="fade-up"
+        data-aos-duration="3000">
+            <span id="1" class="one">Selalu Baik</span>
+            <h1 id="2" class="two">GOOD</h1>
+            <p id="3">Stradale is a exclusive website template specially made for Cafe and Coffe Shops. Made using only the finest coding dan design practices. Get Stradale now!</p>
+            <button>EXPLORE MENU</button>
+        </div>
+        <div class="carousel" data-aos="fade-up"
+        data-aos-duration="3000">
+            <span id="1" class="one">Selalu Terbaik</span>
+            <h1 id="2" class="two">SERVICE</h1>
+            <p id="3">Every service we do always helps buyers and prioritizes buyer comfort, swipe down to see more</p>
+            <button>EXPLORE MENU</button>
+        </div>
+    </div>
+    <div class="home">
+        <a href="#aboutpage">
+            <div class="mousescroll" >
+                <span>.</span>
+            </div>
+        </a>
+        
+    </div>
+    <div class="abouts" id="aboutpage">
+        <div class="welcome">
+            <h1>Welcome To</h1>
+            <span>HitaCoffeeBali</span>
+            <p>Hita Coffe is a caffe business located on Jalan Sutomo No. 64 Pemecutan Kaja. This business focuses on selling coffee and non-coffee, there are also some food/snacks provided on the menu.</p>
+        </div>
+        <div class="boxpromo">
+            <div class="box1">
+                <img src="img/kopi.png" alt="">
+                <div class="infopromo">
+                    <span class="judulpromo">Earl Grey Latte</span>
+                    <div class="textpromo">
+                        <span id="fisrttxt">Discount</span>
+                        <span id="secondtxt">15%</span>
+                    </div>
+                    <button>Order Now</button>
+                    <p>* Waktu Terbatas</p>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="img/piring.png" alt="">
+                <div class="infopromo">
+                    <span class="judulpromo">Mocha Latte</span>
+                    <div class="textpromo">
+                        <span id="fisrttxt">New</span>
+                        <span id="secondtxt">Menu</span>
+                    </div>
+                    <button>Order Now</button>
+                    <p>* Waktu Terbatas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxeffect">
+        <div class="box satu">
+            <div class="imgcover"></div>
+            <h1>01</h1>
+        </div>
+        <div class="box dua">
+            <div class="imgcover"></div>
+            <h1>02</h1>
+        </div>
+        <div class="box tiga">
+            <div class="imgcover"></div>
+            <h1>03</h1>
+        </div>
+        <div class="box empat">
+            <div class="imgcover"></div>
+            <h1>04</h1>
+        </div>
+        
+    </div>
+
+    <div class="bestsold">
+        <div class="leftsold">
+            <p>Specials</p>
+            <span class="dayof">OF THE DAY</span>
+            <p class="classic">Earl Grey Latte</p>
+            <span class="desc">Earl Grey is black tea blended with bergamot oil (a type of citrus), and was first popular in England.</span>
+        </div>
+        <div class="rightsold">
+            <div class="ovalarea">
+                <p>100</p>
+                <p>Sold Today</p>
+            </div>
+            <img src="img/kopi.png" alt="">
+        </div>
+    </div>
+    
+    <div class="imgparalax">
+        <span>Favorite</span>
+        <p>Drinks</p>
+    </div>
+    <div class="menus">
+        <div class="leftmenu">
+            <div class="coffe">
+                <div class="texttitlebox">
+                    <p>COFFE</p>
+                    <span>Hot</span>
+                    <span>Iced</span>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Earl Grey Latte</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>25K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Capuccino Coffe</p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>24K</p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>26K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Hazelnut Frappe</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>32K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Vanilla Frape</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>32K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Caramel Frappe</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>32K</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightmenu">
+            <div class="coffe">
+                <div class="texttitlebox">
+                    <p>NON</p>
+                    <span></span>
+                    <span>Normal</span>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Lyched Iced Tea</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>17K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Lemond Iced Tea</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>17k</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Iced Thai Tea</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>18K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Tea Selection</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>18K</p>
+                </div>
+                <div class="menuinfo">
+                    <p class="d25">Chocolate</p>
+                    <p>     </p>
+                    <p><i class="fa-solid fa-rupiah-sign"></i>22K</p>
+                </div>
+                <button class="moremenu">More Menu</button>
+            </div>
+        </div>
+    </div>
+    <div class="imgparalax">
+        <span>Locations</span>
+        <p>Alamat</p>
+    </div>
+    <div class="location">
+        <div class="col1">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Location</span>
+            <p>Jl. Sutomo No.64, Pemecutan Kaja</p>
+            <a href="https://maps.app.goo.gl/468u9UjBgdt8JEy58" target="_blank" id="maps">(Click To Open Maps)</a>
+        </div>
+        <div class="col2">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Open Hours</span>
+            <p>Senin - Minggu | Sunday - Saturday</p>
+            <p>09.00 - 23.00</p>
+        </div>
+        <div class="col3">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact Us</span>
+            <p>0821-4433-1660</p>
+        </div>
+        
+    </div>
+    <div class="pembatas"></div>
+    <footer> 
+        <div class="leftfooter">
+            <h1>COPYRIGHT</h1>
+            <p>NITACOFFE ©2023</p>
+            <span>All Rights Reserved</span>
+        </div>
+        <div class="rightfooter">
+            <h1>CREATED BY :</h1>
+            <p>Yosua Antoni Pratama (Home)</p>
+            <p>Andhika Adhi Irwansyah (Menu)</p>
+            <p>Marcello Zaviere (Reservation)</p>
+            <p>Adi Putra Winata (Contact)</p>
+            <a href="">Click To Buy Royalti To Remove This Name</a>
+        </div>
+    </footer>
+
+    <div class="upbutton" onclick="location.href='#homes'">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    let nav = document.querySelector(".nav");
+    let scrollmouse = document.querySelector(".mousescroll");
+    
+    let leftbtn = document.querySelector(".leftbtn");
+    let rightbtn= document.querySelector(".rightbtn");
+    
+    let upbtn = document.querySelector(".upbutton");
+
+    leftbtn.addEventListener("click",()=>{
+        showPrev();
+    })
+    rightbtn.addEventListener("click",()=>{
+        showNext();
+    })
+
+    // Ini Khusus Untuk Next dan back button
+
+    var visibleDiv = 0;
+
+    function showDiv(){
+        $(".carousel").hide();
+        $(".carousel:eq("+ visibleDiv +")").show();
+    }
+    showDiv();
+
+    function showNext(){    
+        if(visibleDiv == $(".carousel").length-1){
+            visibleDiv = 0;
+            if(visibleDiv == 0){
+                document.querySelector(".home").style.backgroundImage = "url(img/3.jpg)";
+            }
+        }else {
+            visibleDiv ++;
+            if(visibleDiv == 1){
+                document.querySelector(".home").style.backgroundImage = "url(img/FotoBg.png)";
+            }else if(visibleDiv == 2){
+                document.querySelector(".home").style.backgroundImage = "url(img/2.jpg)";
+            }    
+        }
+        showDiv();
+    }
+
+    function showPrev(){
+        if(visibleDiv == 0){
+            visibleDiv = $(".carousel").length-1;
+            console.log(visibleDiv);
+            if(visibleDiv == 2){
+                document.querySelector(".home").style.backgroundImage = "url(img/2.jpg)";
+            }
+            // 
+        }else {
+            visibleDiv --;
+            console.log(visibleDiv);
+            if(visibleDiv == 1){
+                document.querySelector(".home").style.backgroundImage = "url(img/FotoBg.png)";
+            }else {
+                document.querySelector(".home").style.backgroundImage = "url(img/3.jpg)";
+            }
+        }
+        showDiv();
+    }
+
+
+    // Endingnya
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        if(progressHeight > 5){
+            scrollmouse.style.display = 'none';
+            nav.classList.add("openanim");
+            upbtn.style.display = "flex";
+        }
+        else if(progressHeight < 5){
+            scrollmouse.style.display = 'flex';
+            nav.classList.remove("openanim");
+            upbtn.style.display = "none";
+        }
+    }
+
+    // Ini Arah Navbar
+    const navbar = document.querySelector(".nav");
+    tombolmenu = document.querySelectorAll(".menu");
+    overlay = document.querySelector(".tutupfungsi");
+    close = document.querySelector(".close");
+
+    tombolmenu.forEach((menuBtn) => {
+    menuBtn.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+    });
+    });
+
+    overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+    });
+    
+    close.addEventListener("click", () => {
+        navbar.classList.remove("open");
+    });
+
+
+    //ini mengatur perulangan waktu
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+
+        var seconds = Math.floor((now % (1000 * 60)) / 1000);
+            
+        if(seconds % 10 == 0){
+            showNext();
+        }
+
+        
+    }, 1000);
+
+</script>
+</body>
+</html>
