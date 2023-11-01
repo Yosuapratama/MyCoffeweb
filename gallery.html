@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/gallery.css">
+    <title>MyCoffeWebApp</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="texttitle">
+            <a href="">
+                <img src="img/hittacoffelogo.jpg" style="width: 50px; border-radius: 50%;"  alt="">
+                <span>HITA COFFEE</span>
+            </a>
+        </div>
+        <!--  -->
+        <div class="logo" >
+            <i class="fa-solid fa-bars menu" id="openmenus"></i>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-xmark menu close"></i>
+            </div>
+            <ul class="active">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button>Reservation</button>
+                </li>
+            </ul>
+        </div>
+        <!--  -->
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button>Reservation</button>
+            </li>
+        </ul>
+    </div>
+    <div class="tutupfungsi"></div>
+    <div class="mousescroll" ></div>
+    
+    <div class="paralaximg">
+        <div class="title">
+            <h1>GALLERY</h1>
+            <p>The Gallery Of Hita Coffe Bali</p>
+        </div>
+    </div>
+    <div class="image">
+        <h1>The Gallery Of Hita Coffe</h1>
+        <p>All Of Photos By Hita Coffee</p>
+        <div class="imgcontainer">
+            <div class="boximg">
+                <div class="img satu"></div>
+                <div class="img dua"></div>
+                <div class="img tiga"></div>
+                <div class="img empat"></div>
+            </div>
+
+            <div class="boximg">
+                <div class="img a"></div>
+                <div class="img b"></div>
+                <div class="img c"></div>
+                <div class="img d"></div>
+            </div>
+        </div>
+    </div>
+<script>
+
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    let nav = document.querySelector(".nav");
+    let scrollmouse = document.querySelector(".mousescroll");
+
+    // Endingnya
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        if(progressHeight > 5){
+            scrollmouse.style.display = 'none';
+            nav.classList.add("openanim");
+        }
+        else if(progressHeight < 5){
+            scrollmouse.style.display = 'flex';
+            nav.classList.remove("openanim");
+        }
+    }
+
+    // Ini Arah Navbar
+    const navbar = document.querySelector(".nav");
+    tombolmenu = document.querySelectorAll(".menu");
+    overlay = document.querySelector(".tutupfungsi");
+    close = document.querySelector(".close");
+
+    tombolmenu.forEach((menuBtn) => {
+    menuBtn.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+    });
+    });
+
+    overlay.addEventListener("click", () => {
+        navbar.classList.remove("open");
+    });
+    
+    close.addEventListener("click", () => {
+        navbar.classList.remove("open");
+    });
+
+
+
+
+</script>
+</body>
+</html>
