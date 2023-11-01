@@ -886,6 +886,9 @@ footer {
 .moremenu:hover {
     cursor: pointer;
 }
+#on {
+    color: var(--btn-primary);
+}
 @keyframes puterGelas {
     0% {
         transform: rotate(0);

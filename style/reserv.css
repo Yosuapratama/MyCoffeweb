@@ -13,9 +13,116 @@
     --text-font: "Montserrat", Helvetica, Arial, sans-serif;
     --title-font: "Mrs Saint Delafield";
 }
-#on {
-    color: var(--btn-primary);
+
+/* Reservation Atas */
+.text-center {
+    font-family: var(--text-font);
+    color: var(--text-color);
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url('../img/bgmm.jpg');
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: .2em;
+}
+
+.content p {
+ color:#fff;
+}
+
+/* Reservation Bawah */
+#step2 {
+    padding: 3rem 0;
+}
+
+.row{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+.con1 {
+    color: var(--text-color);
+    align-items: center;
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.con1, .row h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15PX;
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
+.con2{
+    color: var(--text-color);
+    align-items: center;
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.con3{
+    color: var(--text-color);
+    align-items: center;
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.form-control {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.15);
+    border-radius: 0;
+    height: auto;
+    background: rgba(34,34,34,0);
+    font-family: var(--text-font);
+    background-clip: padding-box;
+    color: #fff;
+    background-color: #212529;
+}
+.button {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact */
+
+.btn-submit {
+    width: 0 20%;
+    padding: .75rem 1.3rem;
+    background-color: var(--btn-primary);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
+
 body,html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -45,9 +152,6 @@ body,html {
     cursor: pointer;
 }
 .nav .texttitle a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--text-color);
     text-decoration: none;
 }
@@ -57,8 +161,6 @@ body,html {
     margin-right: 10px;
 }
 .nav .texttitle a span {
-    margin-top: 10px;
-    margin-left: 10px;
     font-size: 26px;
 }
 .nav ul {
@@ -188,136 +290,11 @@ body,html {
 .nav .logo, .sidebar {
     display: none;
 }
-/* 
- */
-.paralaximg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(../img/Backgroundparalax.jpg);
-}
-.title {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.title h1 {
-    font-weight: 800;
-    color: var(--text-color);
-    font-family: var(--text-font);
-    font-size: 80px;
-    letter-spacing: 20px;
-}
-.title p {
-    font-family: var(--title-font);
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-.image {
-    width: 100%;
-    height: 150vh;
-}
-.image h1 {
-    font-family: var(--title-font);
-    font-size: 40px;
-    font-weight: 500;
+
+
+/* Media Querries */
+#on {
     color: var(--btn-primary);
-    text-align: center;
-    padding-top: 20px;
-    margin: 20px 0px;
-}
-.imgcontainer {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-}
-.boximg {
-    display: flex;
-    width: 80%;
-    height: 50%;
-}
-.img {
-    width: 25%;
-    height: 100%;
-    /* border:1px solid #ca8e46; */
-}
-.satu:hover, .dua:hover , .tiga:hover , .empat:hover, .a:hover, .b:hover ,.c:hover , .d:hover {
-    transition: all .4s ease-in-out;
-    cursor: pointer;
-    opacity: .5;
-}
-.image p {
-    text-align: center;
-    color: var(--text-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: var(--text-font);
-}
-.satu {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/111.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.dua {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/333.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.tiga {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/222.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.empat {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/444.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.a {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/001.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.b {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/002.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.c {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/003.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.d {
-    border:2px solid #ca8e46; 
-    background-image: url(../img/gallery/004.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 @media only screen and (max-width: 600px) {
     .nav ul {
@@ -342,24 +319,10 @@ body,html {
     .nav ul li button { 
         margin-left: 0;
     }
-    .boximg {
-        flex-direction: column;
+    .form-control {
+        width: 80%;
     }
-    .img {
-        width: 90%;
-        height: 100%;
-    }
-    .imgcontainer {
-        min-height: 300vh;
-    }
-    .image {
-        padding: 80px 0px;
-        height: auto;
-    }
-    .title h1 {
-        font-size: 40px;
-    }
-    .title p { 
-        font-size: 30px;
+    .content h1 {
+        font-size: 34px;
     }
 }

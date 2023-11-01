@@ -392,7 +392,6 @@ body,html {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
-    flex-direction: column;
 }
 .col1, .col2, .col3 {
     margin: 20px 0px;
@@ -474,7 +473,9 @@ footer {
 .upbutton:hover {
     cursor: pointer;
 }
-
+#on {
+    color: var(--btn-primary);
+}
 @media only screen and (max-width: 600px) {
     .nav ul {
         display: none;
@@ -522,5 +523,8 @@ footer {
     .leftfooter ,.rightfooter {
         margin: 40px 0px;
         width: 100%;
+    }
+    .location {
+        flex-direction: column;
     }
 }
