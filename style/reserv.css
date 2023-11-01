@@ -151,7 +151,14 @@ body,html {
 .nav .texttitle:hover {
     cursor: pointer;
 }
+.nav .texttitle a span {
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .nav .texttitle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--text-color);
     text-decoration: none;
 }
