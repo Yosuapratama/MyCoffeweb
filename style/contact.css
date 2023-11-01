@@ -496,4 +496,7 @@ footer {
         margin-top: 20vh;
         width: 100%;
     }
+    .rightfooter h1 {
+        font-size: 30px;
+    }
 }

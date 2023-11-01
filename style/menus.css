@@ -530,4 +530,7 @@ footer {
     .location {
         flex-direction: column;
     }
+    .rightfooter h1 {
+        font-size: 30px;
+    }
 }
